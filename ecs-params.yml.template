@@ -18,5 +18,5 @@ run_params:
   service_discovery:
     container_name: ecsdemo-nodejs
     service_discovery_service:
-        name: ecsdemo-nodejs
+        name: ecsdemo-nodejs-$C9_USER
         description: string
