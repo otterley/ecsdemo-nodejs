@@ -15,6 +15,9 @@ run_params:
       security_groups:
         - "$security_group"
       assign_public_ip: DISABLED
+  task_placement:
+    constraints:
+      - type: distinctInstance
   service_discovery:
     container_name: ecsdemo-nodejs
     service_discovery_service:
